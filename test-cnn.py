@@ -92,7 +92,7 @@ while True:
 			str_label = 'Sujith'
 		else:
 			str_label = 'Arvind' 
-		if model_out[np.argmax(model_out)] < 0.5:
+		if model_out[np.argmax(model_out)] < 0.85:
 			str_label = 'Unknown'
 		cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
 		cv2.waitKey(1)
